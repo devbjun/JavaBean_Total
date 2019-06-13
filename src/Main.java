@@ -17,7 +17,7 @@ public class Main {
 		new Customer(" JavaBean 1.1.0v - 카페에 오신걸 환영합니다.", 640, 800);
 		
 		// 매니저용 프로그램 시작
-		new Manager(" JavaBean 1.0.8v - 관리자 프로그램", 800, 500);
+		new Manager(" JavaBean 1.1.0v - 관리자 프로그램", 800, 500);
 		
 		// 둘 중 한 프로그램을 종료하면 나머지 프로그램이 동시에 종료됩니다.
 		// 따라서 개별적으로 실행하기 위해서는 customer.Customer 클래스 

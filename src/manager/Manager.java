@@ -3,6 +3,7 @@ package manager;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -120,6 +121,9 @@ public class Manager extends BasicFrame {
 			// 카테고리 탭 팬에 탭 및 패널 추가
 			tpMenu.add(pTabList[i]);
 			tpMenu.setTabComponentAt(tpMenu.getTabCount() - 1, _tab);
+			
+			// 탭 폰트  설정
+			tpMenu.getTabComponentAt(tpMenu.getTabCount() - 1).setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		}
 		
 		// tpCategory 디자인 설정
@@ -154,6 +158,6 @@ public class Manager extends BasicFrame {
 		// 이곳은 프로그램 실행을 위한 메인함수만 작성하도록 합니다.
 		
 		// 매니저용 프로그램 시작
-		new Manager(" JavaBean 1.0.8v - 관리자 프로그램", 800, 500);
+		new Manager(" JavaBean 1.1.0v - 관리자 프로그램", 800, 500);
 	}
 }
